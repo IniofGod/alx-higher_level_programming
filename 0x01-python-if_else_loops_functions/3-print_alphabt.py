@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-for i in range(ord('a'), ord('z') + 1):
-    if i == 'q' or i == 'e':
-        continue
-    print("{:c}".format(i), end="")
+for alph in range(ord('a'), ord('z') + 1):
+    if alph != ord('e') and alph != ord('q'):
+        print("{:c}".format(alph), end="")
