@@ -1,14 +1,15 @@
 #!/usr/bin/python3
 
 
-# best_score - retuns a key with the biggest integer value
 def best_score(a_dictionary):
-    if a_dictionary:
-        dlist = list(a_dictionary)
-        largK = dlist[0]
-        for i in dlist:
-            if a_dictionary[largK] < a_dictionary[i]:
-                largK = i
-        return largK
-    else:
-
+    """
+    gets the best value from a dictionary (greatest integer)
+    """
+    max_val = 0
+    winner = None
+    if type(a_dictionary) is dict:
+        for key, value in a_dictionary.items():
+            if value > max_val:
+                max_val = value
+                winner = key
+    return winner
