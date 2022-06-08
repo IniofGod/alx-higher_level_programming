@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+
+
+# complex_delete - delets keys with a specific value in a dictionary.
+def complex_delete(a_dictionary, value):
+    keylist = []
+    if value in a_dictionary.values():
+        for key, val in a_dictionary.items():
+            if value == val:
+
